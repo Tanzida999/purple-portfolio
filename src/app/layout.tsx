@@ -1,5 +1,7 @@
-const layout = () => {
-  return <div>layout</div>;
-};
-
-export default layout;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
